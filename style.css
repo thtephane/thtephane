@@ -1,0 +1,105 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: #0a0a0a;
+    color: #e5e5e5;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    border-bottom: 1px solid #222;
+}
+
+nav a {
+    color: #aaa;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    color: white;
+}
+
+.hero p {
+    color: #888;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 1px solid #444;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
+}
+
+/* Sections */
+section {
+    padding: 60px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Projects */
+#projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.project-card {
+    border: 1px solid #222;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    border-color: #555;
+}
+
+/* Profile Image */
+.profile-pic {
+    width: 200px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Contact */
+#contact {
+    text-align: center;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    #projects {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+ 
